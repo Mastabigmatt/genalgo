@@ -20,7 +20,7 @@ public class Chromosome {
 
 	}
 	public int[] getGenes(){
-		isFitnessChanged =true;
+		isFitnessChanged=true;
 		return genes;
 	}
 	public int getFitness(){
@@ -37,7 +37,6 @@ public class Chromosome {
 				chromosomeFitness++;
 		}
 		return chromosomeFitness;
-
 	}
 	public String toString(){
 		return Arrays.toString(this.genes);
