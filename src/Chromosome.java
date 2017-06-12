@@ -37,7 +37,6 @@ public class Chromosome {
 				chromosomeFitness++;
 		}
 		return chromosomeFitness;
-
 	}
 	public String toString(){
 		return Arrays.toString(this.genes);

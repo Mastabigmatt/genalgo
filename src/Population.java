@@ -5,7 +5,7 @@ private Chromosome[] chromosomes;
 public Population(int length){
 	chromosomes = new Chromosome[length];
 }
-public Population initializePopublation(){
+public Population initializePopulation(){
 	for(int i = 0; i<chromosomes.length;i++){
 		chromosomes[i] = new Chromosome(GeneticAlgorithm.TARGET_CHROMOSOME.length).initializeChromosome();
 		

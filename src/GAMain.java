@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class GAMain {
 
 	public static void main(String[] args) {
-		Population population = new Population(GeneticAlgorithm.populationSize).initializePopublation();
+		Population population = new Population(GeneticAlgorithm.populationSize).initializePopulation();
 		GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(); 
 		int generationNumber = 0;
 		System.out.println("-------------------------");
