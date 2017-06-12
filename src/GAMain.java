@@ -10,11 +10,15 @@ public class GAMain {
 		System.out.println("Generation No.  " + generationNumber + " | Fittest Chromosome fitness:" + population.getChromosomes()[0].getFitness());
 		printPopulation(population, "Target Chromosome: "+ Arrays.toString(GeneticAlgorithm.TARGET_CHROMOSOME));
 		
-//		 while(population.getChromosomes()[0].getFitness() < GeneticAlgorithm.TARGET_CHROMOSOME.length){
-//			 generationNumber++;
-//			 System.out.println("\n--------------------------");
-//			 population = geneticAlgorithm.evolve(population);
-//		 }
+		 while(population.getChromosomes()[0].getFitness() < GeneticAlgorithm.TARGET_CHROMOSOME.length){
+			 generationNumber++;
+			 System.out.println("\n--------------------------");
+			 population = geneticAlgorithm.evolve(population);
+			 population.sortChromosomesbyFitness();
+			 System.out.println("Generation No.  " + generationNumber + " | Fittest Chromosome fitness:" + population.getChromosomes()[0].getFitness());
+				printPopulation(population, "Target Chromosome: "+ Arrays.toString(GeneticAlgorithm.TARGET_CHROMOSOME));
+				
+		 }
 	}
 public static void printPopulation(Population population, String heading){
 	System.out.println(heading);
