@@ -25,7 +25,7 @@ public class Chromosome {
 	}
 	public int getFitness(){
 		if(isFitnessChanged==true){
-			recalculateFitness();
+			fitness = recalculateFitness();
 			isFitnessChanged = false;
 		}
 		return fitness;
